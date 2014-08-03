@@ -1,0 +1,34 @@
+## On Windows 7
+## R.Version()$version.string : [1] "R version 3.0.3 (2014-03-06)"
+# get the current working directory
+getwd()
+
+# List the contents of the directory
+dir()
+
+# check if a directory exists by the name 'test'. If not, create.
+
+if(!file.exists("test")){
+  dir.create("test")
+}
+
+#check if directory has been created
+file.exists("test") #Answer: TRUE
+
+#delete directory named 'test'
+file.remove("test") # you may see a permission error.
+
+# if there is a permission error, run the following command
+
+### Some cool commands for directory and file operation
+###http://astrostatistics.psu.edu/su07/R/html/base/html/files.html
+#file.create(...)
+#file.exists(...)
+#file.remove(...)
+#file.rename(from, to)
+#file.append(file1, file2)
+#file.copy(from, to, overwrite = FALSE)
+#file.symlink(from, to)
+#dir.create(path, showWarnings = TRUE, recursive = FALSE)
+
+#
